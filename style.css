@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .main-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    margin: 80px auto;
+    z-index: 2;
+    position: relative;
+  }
+  
+  h1 {
+    color: #d50000;
+    font-size: 28px;
+  }
+  
+  .love-text {
+    font-size: 22px;
+    color: #880e4f;
+    margin-bottom: 30px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario input, .formulario button {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  
+  .formulario input {
+    border: 2px solid #f48fb1;
+  }
+  
+  .formulario button {
+    background-color: #d50000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .formulario button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .heart {
+    position: absolute;
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 24px;
+    animation: float 5s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+  .escondido {
+    display: none;
+  }
+  
+  .mensagem-romantica {
+    font-size: 18px;
+    color: #d50000;
+    margin: 20px 0;
+  }
+  
+  #quiz button, #verCarta, #iniciarQuiz {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .carta-estilo {
+    background-color: #fff0f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
