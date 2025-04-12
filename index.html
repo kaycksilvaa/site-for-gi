@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para o Amor da Minha Vida ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particles"></div>
+  <div class="hearts-container"></div>
+  <div id="ytplayer"></div>
+
+  <div class="main-container">
+    <h1>Aprendi por você, meu amor. 💖</h1>
+    <p class="love-text">Eu te amo em cada linha de código ❤️</p>
+
+    <form class="formulario">
+      <h2>Cadastre-se no meu coração</h2>
+      <input type="text" placeholder="Nome da minha namorada💖" required />
+      <input type="email" placeholder="E-mail da minha namorada 💌" required />
+      <button type="submit">Enviar Amor 💕</button>
+    </form>
+
+    <div id="mensagem-pos-cadastro" class="escondido">
+      <p class="mensagem-romantica">Agora, pra desbloquear a carta secreta, precisa acertar as 4 perguntas básicas, amor. Se acertar, pula de fase. Se errar... volta pro comecinho, tá bom? 😘</p>
+      <button id="iniciarQuiz">Começar o Quiz 💡</button>
+    </div>
+
+    <div id="quiz" class="escondido"></div>
+    <div id="mensagem-final" class="escondido">
+      <h2>Parabéns Morzita, agora a carta secreta está disponível!</h2>
+      <button id="verCarta">💌 Clique aqui para visualizar a carta secreta 💌</button>
+    </div>
+
+    <div id="carta" class="escondido carta-estilo">
+      <h2>Minha Carta Secreta pra Você 💘</h2>
+      <p>
+        Você tem um jeito que me encanta... essa "calma" e sua energia ao mesmo tempo. Fico pensando como, com você, ate os momentos mais simples se tornam tão especiais, apenas por você existir. Cada sorriso seu, cada palavra, cada olhar dos seus olhos TÃOOOO BONITINHHHOOO, tudo isso me faz querer ser uma pessoa melhor, e mais do que isso, me faz querer estar cada vez mais perto de você.
+
+Eu aprendi com você a dar mais valor nas pequenas coisas, a ver a beleza nos detalhes. E, sinceramente Giovana, isso é só uma das muitas coisas que você me trouxe. Você me mostrou aqueles gestos que são feitos no silencio em forma de demonstração de amor. No cuidado, na atenção, na preocupação e principalmente no respeito. 
+Eu sei que por mais que tenhamos vividos momentos incríveis até agora, tem muita coisa que ainda ta por vir. Quero rir, chorar (muito), fazer planos, realizar sonhos, dividir cada pedacinho da minha vida com você, sabe? E eu realmente acredito que temos algo muito especial, não de forma leviana, algo que eu não quero deixar escapar, que eu quero cuidar e cultivar todos os dias.
+Eu te amo, Giovana Libania Martins Ticianelli, pra sempre us! 
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Player YouTube
+    var tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("ytplayer", {
+        height: "0",
+        width: "0",
+        videoId: "BTBC9K0GJ8A",
+        playerVars: {
+          autoplay: 1,
+          loop: 1,
+          playlist: "BTBC9K0GJ8A",
+          controls: 0,
+          mute: 0
+        },
+        events: {
+          onReady: (event) => event.target.setVolume(25)
+        }
+      });
+    }
+  </script>
+</body>
+</html>
